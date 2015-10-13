@@ -5,9 +5,10 @@ def calculate(a,b,count,i):
             i=i+1
         else:
             i=i+1
-        calculate(a,b,count,i)
+        return calculate(a,b,count,i)
     else:
-        print(count)
+        
+        return count
       
 
 
@@ -23,5 +24,5 @@ a=input("Enter the sentence ")
 b=inputa()
 count=0
 i=0
-calculate(a,b,count,i)
+print(calculate(a,b,count,i))
  
